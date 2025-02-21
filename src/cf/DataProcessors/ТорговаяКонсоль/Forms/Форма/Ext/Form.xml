@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Шапка" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="8"/>
+			<ChildItems>
+				<InputField name="ТекущаяПланета" id="1">
+					<DataPath>Объект.ТекущаяПланета</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТекущаяПланетаКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ТекущаяПланетаРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="ПланетаПрейскуранта" id="4">
+					<DataPath>Объект.ПланетаПрейскуранта</DataPath>
+					<ClearButton>true</ClearButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПланетаПрейскурантаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ПланетаПрейскурантаРасширеннаяПодсказка" id="6"/>
+					<Events>
+						<Event name="OnChange">ПланетаПрейскурантаПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Трюм" id="70">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Трюм</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Трюм</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ТрюмРасширеннаяПодсказка" id="71"/>
+			<ChildItems>
+				<InputField name="СвободноВТрюме" id="67">
+					<DataPath>Объект.СвободноВТрюме</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СвободноВТрюмеКонтекстноеМеню" id="68"/>
+					<ExtendedTooltip name="СвободноВТрюмеРасширеннаяПодсказка" id="69"/>
+				</InputField>
+				<InputField name="ВместимостьТрюма" id="64">
+					<DataPath>Объект.ВместимостьТрюма</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>из</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ВместимостьТрюмаКонтекстноеМеню" id="65"/>
+					<ExtendedTooltip name="ВместимостьТрюмаРасширеннаяПодсказка" id="66"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="Блокировка" id="83">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заблокирована, очистите планету прейскуранта</v8:content>
+				</v8:item>
+			</Title>
+			<BackColor>style:ToolTipBackColor</BackColor>
+			<ContextMenu name="БлокировкаКонтекстноеМеню" id="84"/>
+			<ExtendedTooltip name="БлокировкаРасширеннаяПодсказка" id="85"/>
+		</LabelDecoration>
+		<UsualGroup name="ПанельТоргови" id="78">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Панель торгови</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Панель торгови</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ПанельТорговиРасширеннаяПодсказка" id="79"/>
+			<ChildItems>
+				<InputField name="Количество" id="9">
+					<DataPath>Объект.Количество</DataPath>
+					<SpinButton>true</SpinButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КоличествоКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="КоличествоРасширеннаяПодсказка" id="11"/>
+				</InputField>
+				<CommandBar name="КупиПродай" id="76">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Купи продай</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Купи продай</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="КупиПродайРасширеннаяПодсказка" id="77"/>
+					<ChildItems>
+						<Button name="Купить" id="72">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.Купить</CommandName>
+							<ExtendedTooltip name="КупитьРасширеннаяПодсказка" id="73"/>
+						</Button>
+						<Button name="Продать" id="74">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.Продать</CommandName>
+							<ExtendedTooltip name="ПродатьРасширеннаяПодсказка" id="75"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+				<InputField name="ДенегВНаличии" id="80">
+					<DataPath>Объект.ДенегВНаличии</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДенегВНаличииКонтекстноеМеню" id="81"/>
+					<ExtendedTooltip name="ДенегВНаличииРасширеннаяПодсказка" id="82"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Таблицы" id="62">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблицы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблицы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ТаблицыРасширеннаяПодсказка" id="63"/>
+			<ChildItems>
+				<Table name="Магазин" id="12">
+					<TitleLocation>Top</TitleLocation>
+					<ReadOnly>true</ReadOnly>
+					<ChangeRowSet>false</ChangeRowSet>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.Магазин</DataPath>
+					<CommandSet>
+						<ExcludedCommand>Add</ExcludedCommand>
+						<ExcludedCommand>CancelSearch</ExcludedCommand>
+						<ExcludedCommand>Change</ExcludedCommand>
+						<ExcludedCommand>Copy</ExcludedCommand>
+						<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+						<ExcludedCommand>Delete</ExcludedCommand>
+						<ExcludedCommand>EndEdit</ExcludedCommand>
+						<ExcludedCommand>Find</ExcludedCommand>
+						<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+						<ExcludedCommand>MoveDown</ExcludedCommand>
+						<ExcludedCommand>MoveUp</ExcludedCommand>
+						<ExcludedCommand>OutputList</ExcludedCommand>
+						<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+						<ExcludedCommand>SearchHistory</ExcludedCommand>
+						<ExcludedCommand>SelectAll</ExcludedCommand>
+						<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+						<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+						<ExcludedCommand>SortListAsc</ExcludedCommand>
+						<ExcludedCommand>SortListDesc</ExcludedCommand>
+					</CommandSet>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="МагазинКонтекстноеМеню" id="13"/>
+					<AutoCommandBar name="МагазинКоманднаяПанель" id="14"/>
+					<ExtendedTooltip name="МагазинРасширеннаяПодсказка" id="15"/>
+					<SearchStringAddition name="МагазинСтрокаПоиска" id="16">
+						<AdditionSource>
+							<Item>Магазин</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="МагазинСтрокаПоискаКонтекстноеМеню" id="17"/>
+						<ExtendedTooltip name="МагазинСтрокаПоискаРасширеннаяПодсказка" id="18"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="МагазинСостояниеПросмотра" id="19">
+						<AdditionSource>
+							<Item>Магазин</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="МагазинСостояниеПросмотраКонтекстноеМеню" id="20"/>
+						<ExtendedTooltip name="МагазинСостояниеПросмотраРасширеннаяПодсказка" id="21"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="МагазинУправлениеПоиском" id="22">
+						<AdditionSource>
+							<Item>Магазин</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="МагазинУправлениеПоискомКонтекстноеМеню" id="23"/>
+						<ExtendedTooltip name="МагазинУправлениеПоискомРасширеннаяПодсказка" id="24"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="МагазинНомерСтроки" id="25">
+							<DataPath>Объект.Магазин.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="МагазинНомерСтрокиКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="МагазинНомерСтрокиРасширеннаяПодсказка" id="27"/>
+						</LabelField>
+						<InputField name="МагазинТовар" id="28">
+							<DataPath>Объект.Магазин.Товар</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="МагазинТоварКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="МагазинТоварРасширеннаяПодсказка" id="30"/>
+						</InputField>
+						<InputField name="МагазинЦенаПокупки" id="31">
+							<DataPath>Объект.Магазин.ЦенаПокупки</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="МагазинЦенаПокупкиКонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="МагазинЦенаПокупкиРасширеннаяПодсказка" id="33"/>
+						</InputField>
+						<InputField name="МагазинЦенаПродажи" id="34">
+							<DataPath>Объект.Магазин.ЦенаПродажи</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="МагазинЦенаПродажиКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="МагазинЦенаПродажиРасширеннаяПодсказка" id="36"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<Table name="ТрюмКорабля" id="37">
+					<TitleLocation>Top</TitleLocation>
+					<ReadOnly>true</ReadOnly>
+					<ChangeRowSet>false</ChangeRowSet>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.ТрюмКорабля</DataPath>
+					<CommandSet>
+						<ExcludedCommand>Add</ExcludedCommand>
+						<ExcludedCommand>CancelSearch</ExcludedCommand>
+						<ExcludedCommand>Change</ExcludedCommand>
+						<ExcludedCommand>Copy</ExcludedCommand>
+						<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+						<ExcludedCommand>Delete</ExcludedCommand>
+						<ExcludedCommand>EndEdit</ExcludedCommand>
+						<ExcludedCommand>Find</ExcludedCommand>
+						<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+						<ExcludedCommand>MoveDown</ExcludedCommand>
+						<ExcludedCommand>MoveUp</ExcludedCommand>
+						<ExcludedCommand>OutputList</ExcludedCommand>
+						<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+						<ExcludedCommand>SearchHistory</ExcludedCommand>
+						<ExcludedCommand>SelectAll</ExcludedCommand>
+						<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+						<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+						<ExcludedCommand>SortListAsc</ExcludedCommand>
+						<ExcludedCommand>SortListDesc</ExcludedCommand>
+					</CommandSet>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ТрюмКорабляКонтекстноеМеню" id="38"/>
+					<AutoCommandBar name="ТрюмКорабляКоманднаяПанель" id="39"/>
+					<ExtendedTooltip name="ТрюмКорабляРасширеннаяПодсказка" id="40"/>
+					<SearchStringAddition name="ТрюмКорабляСтрокаПоиска" id="41">
+						<AdditionSource>
+							<Item>ТрюмКорабля</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ТрюмКорабляСтрокаПоискаКонтекстноеМеню" id="42"/>
+						<ExtendedTooltip name="ТрюмКорабляСтрокаПоискаРасширеннаяПодсказка" id="43"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ТрюмКорабляСостояниеПросмотра" id="44">
+						<AdditionSource>
+							<Item>ТрюмКорабля</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ТрюмКорабляСостояниеПросмотраКонтекстноеМеню" id="45"/>
+						<ExtendedTooltip name="ТрюмКорабляСостояниеПросмотраРасширеннаяПодсказка" id="46"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ТрюмКорабляУправлениеПоиском" id="47">
+						<AdditionSource>
+							<Item>ТрюмКорабля</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ТрюмКорабляУправлениеПоискомКонтекстноеМеню" id="48"/>
+						<ExtendedTooltip name="ТрюмКорабляУправлениеПоискомРасширеннаяПодсказка" id="49"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ХранилищеКорабляНомерСтроки" id="50">
+							<DataPath>Объект.ТрюмКорабля.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ХранилищеКорабляНомерСтрокиКонтекстноеМеню" id="51"/>
+							<ExtendedTooltip name="ХранилищеКорабляНомерСтрокиРасширеннаяПодсказка" id="52"/>
+						</LabelField>
+						<InputField name="ХранилищеКорабляТовар" id="53">
+							<DataPath>Объект.ТрюмКорабля.Товар</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ХранилищеКорабляТоварКонтекстноеМеню" id="54"/>
+							<ExtendedTooltip name="ХранилищеКорабляТоварРасширеннаяПодсказка" id="55"/>
+						</InputField>
+						<InputField name="ХранилищеКорабляОбъем" id="56">
+							<DataPath>Объект.ТрюмКорабля.Объем</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ХранилищеКорабляОбъемКонтекстноеМеню" id="57"/>
+							<ExtendedTooltip name="ХранилищеКорабляОбъемРасширеннаяПодсказка" id="58"/>
+						</InputField>
+						<InputField name="ХранилищеКорабляСебестоимость" id="59">
+							<DataPath>Объект.ТрюмКорабля.Себестоимость</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ХранилищеКорабляСебестоимостьКонтекстноеМеню" id="60"/>
+							<ExtendedTooltip name="ХранилищеКорабляСебестоимостьРасширеннаяПодсказка" id="61"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ТорговаяКонсоль</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Купить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Купить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Купить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Купить</Action>
+		</Command>
+		<Command name="Продать" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Продать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Продать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Продать</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.17">
+	<Item id="3a3d8f5d-c2c7-414f-b2e8-59e0f03180f5">
+		<Name>Дагоба</Name>
+		<Code/>
+		<Description>Дагоба</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e5602797-e8a4-4be5-8126-eab4981d4bea">
+		<Name>Корусант</Name>
+		<Code/>
+		<Description>Корусант</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ac97c7e4-b141-4545-b5d4-9f70c6fd8ba4">
+		<Name>Мандалор</Name>
+		<Code/>
+		<Description>Мандалор</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="54cac30e-4d4b-4acf-854c-cb9ffa9a7bd4">
+		<Name>НалХатта</Name>
+		<Code/>
+		<Description>Нал хатта</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0df500be-3427-45ff-ac45-bc83f0ee99cf">
+		<Name>Татуин</Name>
+		<Code/>
+		<Description>Татуин</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

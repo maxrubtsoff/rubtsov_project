@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.17">
+	<Item id="a2b863ee-0680-4848-a35d-2ada887faac7">
+		<Name>Алкоголь</Name>
+		<Code/>
+		<Description>Алкоголь</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="495f81e4-0f76-4314-99fd-f119787fccd3">
+		<Name>Медикаменты</Name>
+		<Code/>
+		<Description>Медикаменты</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="570fe5e1-c063-4971-bfb8-ce17fe827dc6">
+		<Name>Минералы</Name>
+		<Code/>
+		<Description>Минералы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="422186e0-7240-451b-9700-63ae45e5e6fb">
+		<Name>Наркотики</Name>
+		<Code/>
+		<Description>Наркотики</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="160c33c7-bd12-4864-8f1e-e5cee5e780bb">
+		<Name>Оружие</Name>
+		<Code/>
+		<Description>Оружие</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8eb5a6ab-0c83-42cd-a800-44c7b71952f4">
+		<Name>Продукты</Name>
+		<Code/>
+		<Description>Продукты</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c0dae994-ea86-4a95-95a7-dfe57bd08198">
+		<Name>Роскошь</Name>
+		<Code/>
+		<Description>Роскошь</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6f55cd42-62aa-41ed-af95-cd1ff0923eb3">
+		<Name>Топливо</Name>
+		<Code/>
+		<Description>Топливо</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>
